@@ -1,0 +1,12 @@
+{
+    "models": [
+
+        {
+            "model_name": "openai/gpt-4o-mini",
+            "api_base": "https://openrouter.ai/api/v1",
+            "api_key": ""
+        }
+    ],
+    "input_file_path": "../../../data_v2/function_test/llm_loop/llm-embedder",
+    "output_dir": "../../../data_v2/function_test/llm_loop/llm-embedder/fact_check"
+}

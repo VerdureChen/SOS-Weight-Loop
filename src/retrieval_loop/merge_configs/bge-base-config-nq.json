@@ -1,0 +1,25 @@
+{
+  "task": "retrieve",
+  "input_file": [
+    "/mnt/ceph_home/SOS_benchmark/ada_journal/SOS-Retrieval-Loop/src/../data_v2/input_data/DPR/modified_sampled_query/nq-test-sample-200.jsonl",
+    "/mnt/ceph_home/SOS_benchmark/ada_journal/SOS-Retrieval-Loop/src/../data_v2/input_data/DPR/modified_sampled_query/webq-test-sample-200.jsonl",
+    "/mnt/ceph_home/SOS_benchmark/ada_journal/SOS-Retrieval-Loop/src/../data_v2/input_data/DPR/modified_sampled_query/tqa-test-sample-200.jsonl",
+    "/mnt/ceph_home/SOS_benchmark/ada_journal/SOS-Retrieval-Loop/src/../data_v2/input_data/DPR/modified_sampled_query/pop-test-sample-200.jsonl"
+  ],
+  "retrieval_model": "bge-base",
+  "normalize_embeddings": true,
+  "index_name": "bm25_psgs_index",
+  "elasticsearch_url": "http://124.16.138.150:9978",
+  "retrieved_file": [
+    "/mnt/ceph_home/SOS_benchmark/ada_journal/SOS-Retrieval-Loop/src/../data_v2/loop_output/DPR/weight_nq_webq_tqa_pop_loop_output_bge-base_total_loop_10_20241224115737/nq/bge-base_nq_retrieval_after_init_loop_0",
+    "/mnt/ceph_home/SOS_benchmark/ada_journal/SOS-Retrieval-Loop/src/../data_v2/loop_output/DPR/weight_nq_webq_tqa_pop_loop_output_bge-base_total_loop_10_20241224115737/webq/bge-base_webq_retrieval_after_init_loop_0",
+    "/mnt/ceph_home/SOS_benchmark/ada_journal/SOS-Retrieval-Loop/src/../data_v2/loop_output/DPR/weight_nq_webq_tqa_pop_loop_output_bge-base_total_loop_10_20241224115737/tqa/bge-base_tqa_retrieval_after_init_loop_0",
+    "/mnt/ceph_home/SOS_benchmark/ada_journal/SOS-Retrieval-Loop/src/../data_v2/loop_output/DPR/weight_nq_webq_tqa_pop_loop_output_bge-base_total_loop_10_20241224115737/pop/bge-base_pop_retrieval_after_init_loop_0"
+  ],
+  "output_file": "../../data_v2/function_test/LLM_test_data/test_front/output_with_weights.jsonl",
+  "dense_index_name": "bge-base_faiss_index",
+  "dense_index_path": "../../data_v2/indexes",
+  "added_documents": "../../data_v2/function_test/llm_loop/bge-base",
+  "num_top_documents": 20,
+  "with_alpha": true
+}

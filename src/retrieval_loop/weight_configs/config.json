@@ -1,0 +1,26 @@
+{
+  "input_file": "../../data_v2/function_test/LLM_test_data/llm_test_data.jsonl",
+  "retrieval_model": "bge-base",
+  "normalize_embeddings": true,
+  "index_name": "bm25_psgs_index",
+  "elasticsearch_url": "http://124.16.138.147:9978",
+  "pseudo_query_output": "../../data_v2/function_test/LLM_test_data/temp_pseudo_query.jsonl",
+  "retrieved_file": "../../data_v2/function_test/LLM_test_data/retrieved_docs",
+  "output_file": "../../data_v2/function_test/LLM_test_data/output_with_weights.jsonl",
+  "new_add_fact_score_file": "../../data_v2/function_test/LLM_test_data/openai_gpt-4o-mini_scores.jsonl",
+  "llm_detector_model": "../classification_training/output/fine-tuned-chatgpt-qa-detector-roberta",
+  "dense_index_name": "bge-base_faiss_index_pq",
+  "dense_index_path": "../../data_v2/indexes",
+  "openai_api_base": "https://openrouter.ai/api/v1",
+  "openai_api_key": "",
+  "optimization": {
+    "population_size": 100,
+    "generations": 100,
+    "crossover_probability": 0.5,
+    "mutation_probability": 0.2
+  },
+  "num_top_documents": 20,
+  "with_alpha": true,
+  "output_files_ori": "../../data_v2/function_test/LLM_test_data/original_output.jsonl",
+  "output_files_wtd": "../../data_v2/function_test/LLM_test_data/weighted_output.jsonl"
+}

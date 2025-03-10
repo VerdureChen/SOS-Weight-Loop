@@ -1,0 +1,17 @@
+{
+      "retrieval_model": "bge-base",
+      "index_name": "bge-base_faiss_index",
+      "index_path": "../../data_v2/indexes",
+      "normalize_embeddings": true,
+      "query_files": ["../../data_v2/function_test/train_query_ori/add_id/webq_query_with_id.jsonl",
+                     "../../data_v2/function_test/train_query_ori/add_id/trivia_query_with_id.jsonl",
+                     "../../data_v2/function_test/train_query_ori/add_id/nq_query_with_id.jsonl"
+      ],
+      "query_page_content_column": "question",
+      "output_files": ["../../data_v2/function_test/train_query_ori/ori_res/webq_2k-bge-base-full-corpus",
+                       "../../data_v2/function_test/train_query_ori/ori_res/trivia_20k-bge-base-full-corpus",
+                       "../../data_v2/function_test/train_query_ori/ori_res/nq_20k-bge-base-full-corpus"
+      ],
+      "elasticsearch_url": "http://124.16.138.142:9978",
+      "with_alpha":true
+    }

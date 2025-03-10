@@ -1,0 +1,18 @@
+{
+    "task": "retrieve",
+    "retrieval_model": "llm-embedder",
+    "normalize_embeddings": true,
+    "index_name": "bm25_psgs_index",
+    "elasticsearch_url": "http://124.16.138.150:9978",
+    "output_file": "output/retrieved_documents.json",
+    "dense_index_name": "llm-embedder_faiss_index",
+    "dense_index_path": "../../data_v2/indexes",
+    "added_documents": "../../data_v2/function_test/llm_loop/llm-embedder",
+    "num_top_documents": 100,
+    "with_alpha": true,
+    "input_file": "input/pseudo_queries.json",
+    "retrieved_file": "output/retrieved_pseudo_documents.json",
+    "loop": 0,
+    "weight_init_path": "../../data_v2/loop_output/DPR/weight_nq_webq_tqa_pop_loop_output_llm-embedder_total_loop_10_20250126073202/weight_init_output",
+    "weight_update_path": "../../data_v2/loop_output/DPR/weight_nq_webq_tqa_pop_loop_output_llm-embedder_total_loop_10_20250126073202/weight_update_output"
+}

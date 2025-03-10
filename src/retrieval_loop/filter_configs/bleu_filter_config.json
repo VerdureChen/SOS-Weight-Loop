@@ -1,0 +1,19 @@
+{
+        "input_file": [
+        "/mnt/ceph_home/SOS_benchmark/ada_journal/SOS-Retrieval-Loop/src/../data_v2/loop_output/DPR/weight_nq_webq_tqa_pop_loop_output_llm-embedder_total_loop_10_20250131024055/nq/llm-embedder_nq_retrieval_after_init_loop_1",
+        "/mnt/ceph_home/SOS_benchmark/ada_journal/SOS-Retrieval-Loop/src/../data_v2/loop_output/DPR/weight_nq_webq_tqa_pop_loop_output_llm-embedder_total_loop_10_20250131024055/webq/llm-embedder_webq_retrieval_after_init_loop_1",
+        "/mnt/ceph_home/SOS_benchmark/ada_journal/SOS-Retrieval-Loop/src/../data_v2/loop_output/DPR/weight_nq_webq_tqa_pop_loop_output_llm-embedder_total_loop_10_20250131024055/tqa/llm-embedder_tqa_retrieval_after_init_loop_1",
+        "/mnt/ceph_home/SOS_benchmark/ada_journal/SOS-Retrieval-Loop/src/../data_v2/loop_output/DPR/weight_nq_webq_tqa_pop_loop_output_llm-embedder_total_loop_10_20250131024055/pop/llm-embedder_pop_retrieval_after_init_loop_1"
+        ],
+        "output_file": [
+        "/mnt/ceph_home/SOS_benchmark/ada_journal/SOS-Retrieval-Loop/src/../data_v2/loop_output/test/llm-embedder_nq_retrieval_after_init_loop_1_filtered_bleu",
+        "/mnt/ceph_home/SOS_benchmark/ada_journal/SOS-Retrieval-Loop/src/../data_v2/loop_output/test/llm-embedder_webq_retrieval_after_init_loop_1_filtered_bleu",
+        "/mnt/ceph_home/SOS_benchmark/ada_journal/SOS-Retrieval-Loop/src/../data_v2/loop_output/test/llm-embedder_tqa_retrieval_after_init_loop_1_filtered_bleu",
+        "/mnt/ceph_home/SOS_benchmark/ada_journal/SOS-Retrieval-Loop/src/../data_v2/loop_output/test/llm-embedder_pop_retrieval_after_init_loop_1_filtered_bleu"
+        ],
+        "elasticsearch_url": "http://124.16.138.150:9978",
+        "index_name": "bm25_psgs_index",
+        "max_self_bleu": 0.4,
+        "num_docs": 20,
+        "added_documents": "/mnt/ceph_home/SOS_benchmark/ada_journal/SOS-Retrieval-Loop/src/../data_v2/function_test/llm_loop/llm-embedder"
+    }

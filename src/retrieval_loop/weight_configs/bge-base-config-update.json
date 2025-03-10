@@ -1,0 +1,39 @@
+{
+  "task": "weight_update",
+  "input_query": [
+    "/mnt/ceph_home/SOS_benchmark/ada_journal/SOS-Retrieval-Loop/src/../data_v2/input_data/DPR/sampled_query/nq-test-sample-200.jsonl",
+    "/mnt/ceph_home/SOS_benchmark/ada_journal/SOS-Retrieval-Loop/src/../data_v2/input_data/DPR/sampled_query/webq-test-sample-200.jsonl",
+    "/mnt/ceph_home/SOS_benchmark/ada_journal/SOS-Retrieval-Loop/src/../data_v2/input_data/DPR/sampled_query/tqa-test-sample-200.jsonl",
+    "/mnt/ceph_home/SOS_benchmark/ada_journal/SOS-Retrieval-Loop/src/../data_v2/input_data/DPR/sampled_query/pop-test-sample-200.jsonl"
+  ],
+  "retrieval_model": "bge-base",
+  "normalize_embeddings": true,
+  "index_name": "bm25_psgs_index",
+  "elasticsearch_url": "http://124.16.138.150:9978",
+  "pseudo_query_output": "../../data_v2/function_test/LLM_test_data/temp_pseudo_query.jsonl",
+  "retrieved_file": [
+    "/mnt/ceph_home/SOS_benchmark/ada_journal/SOS-Retrieval-Loop/src/../data_v2/loop_output/DPR/weight_nq_webq_tqa_pop_loop_output_bge-base_total_loop_10_20241224115737/nq/bge-base_nq_retrieval_after_init_loop_0",
+    "/mnt/ceph_home/SOS_benchmark/ada_journal/SOS-Retrieval-Loop/src/../data_v2/loop_output/DPR/weight_nq_webq_tqa_pop_loop_output_bge-base_total_loop_10_20241224115737/webq/bge-base_webq_retrieval_after_init_loop_0",
+    "/mnt/ceph_home/SOS_benchmark/ada_journal/SOS-Retrieval-Loop/src/../data_v2/loop_output/DPR/weight_nq_webq_tqa_pop_loop_output_bge-base_total_loop_10_20241224115737/tqa/bge-base_tqa_retrieval_after_init_loop_0",
+    "/mnt/ceph_home/SOS_benchmark/ada_journal/SOS-Retrieval-Loop/src/../data_v2/loop_output/DPR/weight_nq_webq_tqa_pop_loop_output_bge-base_total_loop_10_20241224115737/pop/bge-base_pop_retrieval_after_init_loop_0"
+  ],
+  "output_file": "../../data_v2/function_test/LLM_test_data/test_front/update_output_with_weights.jsonl",
+  "new_add_fact_score_file": "/mnt/ceph_home/SOS_benchmark/ada_journal/SOS-Retrieval-Loop/src/../data_v2/function_test/llm_loop/bge-base/fact_check/",
+  "llm_detector_model": "../classification_training/output/fine-tuned-chatgpt-qa-detector-roberta",
+  "dense_index_name": "bge-base_faiss_index",
+  "dense_index_path": "../../data_v2/indexes",
+  "openai_api_base": "https://openrouter.ai/api/v1",
+  "openai_api_key": "",
+  "added_documents": "../../data_v2/function_test/llm_loop/bge-base",
+  "optimization": {
+    "population_size": 100,
+    "generations": 100,
+    "crossover_probability": 0.5,
+    "mutation_probability": 0.2
+  },
+  "num_top_documents": 20,
+  "with_alpha": true,
+  "output_files_ori": "../../data_v2/function_test/LLM_test_data/original_output.jsonl",
+  "output_files_wtd": "../../data_v2/function_test/LLM_test_data/weighted_output.jsonl",
+  "fit_weights": "9"
+}

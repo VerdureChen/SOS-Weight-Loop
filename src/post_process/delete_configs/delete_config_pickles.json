@@ -1,0 +1,10 @@
+{
+       "task": "pickle",
+       "pickle_file_path": "../../src/run_logs/fit_2_weight_nq_webq_tqa_pop_loop_log_llm-embedder_total_loop_10_20250225021137/pickles",
+       "id_files": ["../../src/run_logs/fit_2_weight_nq_webq_tqa_pop_loop_log_llm-embedder_total_loop_10_20250225021137/index_add_logs/"],
+       "model_name": "faiss",
+       "index_path": "../../data_v2/indexes",
+       "index_name": "llm-embedder_faiss_index",
+       "elasticsearch_url": "http://124.16.138.150:9978",
+       "delete_log_path": "../../src/run_logs/fit_2_weight_nq_webq_tqa_pop_loop_log_llm-embedder_total_loop_10_20250225021137/index_add_logs"
+}

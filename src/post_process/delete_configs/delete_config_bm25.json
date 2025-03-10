@@ -1,0 +1,9 @@
+{
+       "task": "no_pickle",
+       "id_files": ["../../data_v2/indexes/index_add_logs"],
+       "model_name": "bm25",
+       "index_path": "../../data_v2/indexes",
+       "index_name": "bm25_psgs_index_test",
+       "elasticsearch_url": "http://124.16.138.147:9978",
+       "delete_log_path": "../../data_v2/indexes/index_add_logs"
+}
